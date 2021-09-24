@@ -1,0 +1,96 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.main-header .navbar .navbar-brand{
+    padding: 0 2rem 0 2rem;
+}
+.main-header .navbar{
+    padding: 1rem 2rem;
+}
+.main-header .navbar .navbar-nav .nav-link{
+    text-transform: uppercase;
+    padding:1rem  1.7rem;
+    color: #fff;
+    font-weight: 500;
+}
+.main-header .navbar .navbar-nav .nav-item .active{
+    color:  rgb(247, 243, 4);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.main-header .navbar .navbar-nav .nav-item a:hover{
+    color:  rgb(247, 243, 4);
+    /* border-bottom: 2px solid; */
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.site-main .site-banner h3{
+    padding-top: 35%;
+    font-weight: 500;
+}
+/* .site-banner{
+    color: rgb(243, 239, 239);
+    background: grey;
+    background-image: url("/images/about.JPG");
+    background-color: rgb(34, 47, 70);
+    background-blend-mode:multiply ;
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+} */
+.site-main .site-banner h3::after{
+    content: "";
+    height: 2px;
+    width: 25vw;
+    background: black;
+    display: inline-block;
+    margin-left: 2%;
+    transform: translateY(-10px);
+}
+.site-main .site-banner h1{
+    font-size: 3rem;
+}
+.navbar{
+    background-color: #c70af5;
+    opacity: 0.8;
+}
+/* .site-main .site-banner h4{
+    font-size: 1.2rem;
+} */
+.site-banner{
+    margin-bottom: 190px;
+}
+.btn-purple{
+    background-color: #c70af5;
+   
+}
+/* .about-me button:hover{
+    color: rgb(247, 243, 4);
+} */
+.about-me button:hover{
+    background-color: #540368;
+}
+.about-me p{
+    text-align: justify;
+    line-height: 35px;
+}
+.about-me a{
+    text-decoration: none;
+}
+.projects,
+.contact-me{
+    padding-top: 120px;
+}
+.projects a{
+    color: #c70af5 ;
+}
+.footer-section{
+    background-color:#540368 ;
+    color: white;
+}
+.footer-section p{
+    margin: 0;
+}
