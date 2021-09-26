@@ -56,6 +56,9 @@ body {
 .text-black{
     color: rgb(73, 71, 71);
 }
+.border-purple{
+    border: 1px solid purple;
+}
 
 .details{
     /* background-color:#f8f9fa ; */
