@@ -8,14 +8,17 @@ body {
 .text-birthstone,
 .navbar-brand{
     font-family: 'Birthstone', cursive;
-    font-size: 40px;
+    font-size: 30px;
 }
 .navbar{
     background-color: white;
 }
+.site-banner{
+    padding-top: 120px;
+}
 .site-banner,
 .projects{
-    background: url(./images/home-shape.png);
+    background: url("/images/home-shape.png");
     background-size: cover;
     position: relative;
     background-position: center center;
@@ -39,7 +42,7 @@ body {
     content: "";
     height: 2px;
     width: 20vw;
-    background: black;
+    background: purple;
     display: inline-block;
     margin-left: 2%;
     transform: translateY(-10px);
@@ -55,11 +58,11 @@ body {
 }
 
 .details{
-    background-color:#f8f9fa ;
-    padding:20px 10px;
+    /* background-color:#f8f9fa ; */
+    padding:10px 10px;
 }
 .blogs{
-    background-color: #fff;
+    /* background-color: white; */
     padding-bottom: 50px;
 }
 .blogs a,.projects a{
@@ -70,4 +73,11 @@ body {
 }
 .footer-section{
     background-color: rgb(44, 2, 44);
+}
+.dark-mode {
+    background-color: rgb(14, 14, 14);
+    color: #fdfdfd;
+}
+.text-dark-mode{
+    background-color: rgb(14, 14, 14);
 }

@@ -19,6 +19,7 @@
         <nav class="navbar shadow navbar-expand-lg navbar-light fixed-top ">
             <div class="container-fluid">
               <a class="navbar-brand fw-bolder ps-0" href="#">Dev_Marienoir</a>
+              
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -37,8 +38,11 @@
                   <li class="nav-item px-0 py-2 px-lg-3">
                     <a class="nav-link fw-bold text-uppercase" href="#contact">Contact</a>
                   </li>
-                  <li class="nav-item px-0 py-2 px-lg-3">
+                  <li class="nav-item px-0 py-2 px-lg-2">
                     <a class="nav-link fw-bold text-uppercase" href="#blogs">Blog</a>
+                  </li>
+                  <li class="nav-item px-0 py-2 px-lg-2">
+                    <button onclick="myFunction()" type="button" class="btn text-dark-mode text-white">Dark mode</button>
                   </li>
                   
                 </ul>
@@ -46,7 +50,7 @@
             </div>
           </nav>
     </header>
-    <section class="site-banner ps-3 ps-lg-5 pt-5">
+    <section class="site-banner ps-3 ps-lg-5">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-8 p-0">
@@ -54,8 +58,8 @@
                     <h1 class="mb-3 text-uppercase fw-bold">I am Mary Okosun</h1>
                     <h6 class="text-uppercase">Web Developer | Technical Writer</h6>
                     <div class="my-4">
-                        <button type="button" class="text-uppercase shadow border rounded py-3 me-2 px-4 btn-purple fw-bold"><a href="#" class="text-white">Hire Me</a></button>
-                        <button type="button" class="text-uppercase shadow border rounded py-3 px-4 Ffw-bold"><a href="https://drive.google.com/file/d/1FZdHjjTewQG4mUvieE-q78F1dWPrwBtr/view?usp=sharing" class="text-black">Download cv</a></button>    
+                        <button type="button" class="text-uppercase shadow border rounded py-3 me-2 px-4 btn-purple fw-bold"><a href="#contact" class="text-white">Hire Me</a></button>
+                        <button type="button" class="text-uppercase shadow border rounded py-3 px-4 fw-bold"><a href="https://drive.google.com/file/d/1FZdHjjTewQG4mUvieE-q78F1dWPrwBtr/view?usp=sharing" class="text-black">Download cv</a></button>    
                     </div>
                 </div>
                 <div class="col-12 col-lg-4">
@@ -65,7 +69,7 @@
         </div>
     </section>
          
-    <section class="about-me mt-5 px-2 px-lg-5 mx-5 py-5 bg-white border border-2 shadow rounded " id="about">
+    <section class="about-me mt-5 px-2 px-lg-5 mx-3 mx-lg-5 py-5 border border-2 shadow rounded " id="about">
         <div class="container">
           <div class="row">
               <div class="col-12 col-lg-4 my-lg-0 my-4 details">
@@ -203,23 +207,21 @@
           </div>
             <div class="col-12 col-lg-6">
               <div class="mb-3 mx-4">
-                <label for="exampleFormControlInput1" class="form-label">Full Name</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your name">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your full name">
               </div>
               <div class="mb-3 mx-4">
-                <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder=" Enter your email address">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder=" Enter your email address">
               </div>
               <div class="mb-3 mx-4">
-                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4"></textarea>
               </div>
               <div class="mb-3 ms-4">
                 <button type="submit" class="btn btn-purple shadow text-white fw-bold text-uppercase">Submit</button>
               </div>
-            
             </div>
-            
         </div>
       </section>
       <footer class="footer-section mt-5" id="footer">
@@ -237,6 +239,14 @@
           </div>
         </div>
       </footer>
+      <script>
+        function myFunction() {
+           var element = document.body;
+        
+           element.classList.toggle("dark-mode");
+          
+        }
+        </script>
     <script src="./js/bootstrap.min.js"></script>
 </body>
 </html>
