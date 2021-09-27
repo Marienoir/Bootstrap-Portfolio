@@ -88,6 +88,9 @@ body {
 .text-dark-mode{
     background-color: rgb(14, 14, 14);
 }
+.github-logo{
+    width: 40px;
+}
 .switch {
     position: relative;
     display: inline-block;
