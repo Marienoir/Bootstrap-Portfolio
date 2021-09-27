@@ -15,11 +15,11 @@
     <title>MARY OKOSUN | Portfolio</title>
 </head>
 <body>
+  
     <header class="main-header">
         <nav class="navbar shadow navbar-expand-lg navbar-light fixed-top ">
             <div class="container-fluid">
               <a class="navbar-brand fw-bolder ps-0" href="#">Dev_Marienoir</a>
-              
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -41,15 +41,18 @@
                   <li class="nav-item px-0 py-2 px-lg-2">
                     <a class="nav-link fw-bold text-uppercase" href="#blogs">Blog</a>
                   </li>
-                  <li class="nav-item px-0 py-2 px-lg-2">
-                    <button onclick="myFunction()" type="button" class="btn text-dark-mode text-white">Dark mode</button>
+                  <li class="nav-item px-0 py-2 px-lg-2 mt-1">
+                    <label class="switch">
+                      <input type="checkbox" onclick="myFunction()">
+                      <span class="slider round"></span>
+                    </label>
                   </li>
-                  
                 </ul>
               </div>
             </div>
           </nav>
     </header>
+
     <section class="site-banner ps-3 ps-lg-5">
         <div class="container">
             <div class="row">
@@ -87,6 +90,7 @@
           </div>
       </div>
     </section>
+
     <section class="projects pt-5" id="projects">
         <div class="container">
             <div class="text-center">
@@ -153,13 +157,12 @@
             
         </div>
     </section>
+
     <section class="blogs" id="blogs">
         <div class="container">
             <div class="row mt-4">
                 <div class="text-center mt-5">
-                    <!-- <img src="./assets/apostrophre.svg" class="position-absolute start-50 opacity-50"> -->
                     <h1 class="fw-bold fs-1 my-3">Latest Blogs</h1>
-                    <!-- <p>Get inspired by these stories</p> -->
                 </div>
                 <div class="d-flex flex-lg-row gap-3 flex-column">
                     <div class="m-lg-auto m-sm-0">
@@ -167,7 +170,7 @@
                             <h4 class="fw-bold my-3">What is random() in JavaScript?</h4>
                             <p>In JavaScript, random() is a built-in method that is used to return a random number in the range 0 to 1 (0 inclusive and 1 exclusive). </p>
                             
-                            <a href="https://www.educative.io/shoteditor/5973374741774336" class="text-purple">Read More</a>
+                            <a href="https://www.educative.io/shoteditor/5973374741774336" class="text-purple">Read More <img class="arrow img-fluid" src="./images/right.png"></a>
                         </div>
                     </div>
                     <div class="d-flex flex-column gap-3 mb-5">
@@ -175,13 +178,13 @@
                             <h4 class="fw-bold my-3">Building a Food Recipe Web App</h4>
                             <p>In this article, we would create a functional application that allows individuals search for food recipes. To get these recipes, we have to make use of an external API.</p>
                             
-                            <a href="https://okosunmary.hashnode.dev/building-a-food-recipe-web-app" class="text-purple">Read More</a>
+                            <a href="https://okosunmary.hashnode.dev/building-a-food-recipe-web-app" class="text-purple">Read More <img class="arrow img-fluid" src="./images/right.png"></a>
                         </div>
                         <div class="p-3 shadow">
-                            <h4 class="fw-bold my-3">Understanding Object Oriented Programming(OOP)</h4>
-                            <p>Object Oriented Programming is a programming paradigm in which programs are written around objects and data.</p>
+                            <h4 class="fw-bold my-3">Sizings Using Px, Em And Rem</h4>
+                            <p>Understanding the concept behind the use of pixels, em and rem becomes clearer with usage and practice overtime. This article explains these concepts with examples and codepen links to these examples. </p>
                             
-                            <a href="https://okosunmary.hashnode.dev/understanding-object-oriented-programmingoop" class="text-purple">Read More</a>
+                            <a href="https://okosunmary.hashnode.dev/sizings-using-px-em-and-rem" class="text-purple">Read More <img class="arrow img-fluid" src="./images/right.png"></a>
                         </div>
                         
                     </div>
@@ -189,9 +192,10 @@
             </div>
             <div class="mb-3 ms-4 text-center">
                 <button type="submit" class="btn btn-purple shadow  text-uppercase"><a class="text-white" href="https://okosunmary.hashnode.dev/">Read More</a></button>
-              </div>
+            </div>
         </div>
     </section>
+
     <section class="contact-me" id="contact">
         <div class="container">
           <div class="text-center my-4">
@@ -205,48 +209,49 @@
                 </div>
             </div>
           </div>
-            <div class="col-12 col-lg-6">
-              <div class="mb-3 mx-4">
-                <label for="name" class="form-label">Full Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Enter your full name">
-              </div>
-              <div class="mb-3 mx-4">
-                <label for="email" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="email" placeholder=" Enter your email address">
-              </div>
-              <div class="mb-3 mx-4">
-                <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" rows="4"></textarea>
-              </div>
-              <div class="mb-3 ms-4">
-                <button type="submit" class="btn btn-purple shadow text-white fw-bold text-uppercase">Submit</button>
-              </div>
+          <form class="col-12 col-lg-6">
+            <div class="mb-3 mx-4">
+              <label for="validationDefaultUsername" class="form-label">Full Name</label>
+              <input type="text" class="form-control" placeholder="Enter your full name" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
             </div>
+            <div class="mb-3 mx-4">
+              <label for="validationDefaultUsername" class="form-label">Email Address</label>
+              <input type="text" class="form-control" placeholder="Enter your email address" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+            </div>
+            <div class="mb-3 mx-4">
+              <label for="validationDefaultUsername" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4"></textarea>
+            </div>
+            <div class="mb-3 ms-4">
+              <button type="submit" class="btn btn-purple shadow text-white fw-bold text-uppercase">Submit</button>
+            </div>
+          </form>
         </div>
-      </section>
-      <footer class="footer-section mt-5" id="footer">
-        <div class="container">
-          <div class="row">
-            <div class="d-flex justify-content-evenly pt-4 text-white px-5">
-              <img class="img-fluid border border-2 rounded-pill p-2" src="./images/facebook1.svg" alt="facebook">
-              <img class="img-fluid border border-2 rounded-pill p-2" src="./images/instagram.svg" alt="instagram">
-              <img class="img-fluid border border-2 rounded-pill p-2" src="./images/linkedin1.svg" alt="linkedin">
-              <img class="img-fluid border border-2 rounded-pill p-2" src="./images/twitter.svg" alt="twitter">
-            </div>
-          </div>
-          <div class="py-4 text-center text-white">
-            <p>Designed and Developed by Marienoir. 2021</p>
+    </section>
+
+    <footer class="footer-section mt-5" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="d-flex justify-content-evenly pt-4 text-white px-5">
+            <img class="img-fluid border border-2 rounded-pill p-2" src="./images/facebook1.svg" alt="facebook">
+            <img class="img-fluid border border-2 rounded-pill p-2" src="./images/instagram.svg" alt="instagram">
+            <img class="img-fluid border border-2 rounded-pill p-2" src="./images/linkedin1.svg" alt="linkedin">
+            <img class="img-fluid border border-2 rounded-pill p-2" src="./images/twitter.svg" alt="twitter">
           </div>
         </div>
-      </footer>
-      <script>
+        <div class="py-4 text-center text-white">
+          <p>Designed and Developed by Marienoir. 2021</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
         function myFunction() {
            var element = document.body;
-        
+
            element.classList.toggle("dark-mode");
-          
         }
-        </script>
+    </script>
     <script src="./js/bootstrap.min.js"></script>
 </body>
 </html>
