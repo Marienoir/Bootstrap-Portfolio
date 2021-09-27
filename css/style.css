@@ -17,7 +17,9 @@ body {
     padding-top: 120px;
 }
 .site-banner,
-.projects{
+.about-me,
+.projects,
+.blogs{
     background: url("/images/home-shape.png");
     background-size: cover;
     position: relative;
